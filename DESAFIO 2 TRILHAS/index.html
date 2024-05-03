@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2 Desafio de programação  do trilhas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-form">
+        <form>
+            
+           <h1>Inscreva-se</h1>
+            
+
+            <div class="input-container">
+                <input type="text" id="name" name="name" placeholder="Nome completo">
+            </div>
+
+            <div class="input-container">
+                <input id="n1" name="n1" placeholder="CPF">
+            </div>
+
+            <div class="input-container">
+                <input id="n2" name="n2" placeholder="Telefone">
+            </div>
+
+            <div class="input-container">
+                <input id="n3" name="n3" placeholder="Endereço">
+            </div>
+
+            <div class="input-container">
+                <input id="n3" name="n3" placeholder="Estado">
+            </div>
+
+            <div class="input-container">
+                <input id="n3" name="n3" placeholder="CEP">
+            </div>
+
+            <div class="input-container">
+                    <input id="n3" name="n3" placeholder="Cidade">
+            </div>
+
+            <div class="container-buttons">
+                <div class="button-file">
+                    <p class="button-file-p">Documento de Identidade</p>
+                    <label class="button-main" for="file1">
+                        <div class="button-context">
+                            <div class="button-context-img">
+                                <svg width="48" height="44" viewBox="0 0 48 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1875 31.125C-2.99999 32.8125 -1.31249 14.25 12.1875 15.9375C7.12501 -2.625 35.8125 -2.625 34.125 10.875C51 5.8125 51 32.8125 35.8125 31.125M15.5625 24.375L24 17.625M24 17.625L32.4375 24.375M24 17.625V42.9375"
+                                        stroke="#9BCB15" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="button-context-text">
+                                <p>Selecione arquivo ou arraste pra cá</p>
+                                <p style="color: #989692;">JPG, PNG ou PDF</p>
+                            </div>
+                        </div>
+                        <button class="button-main-select" onclick="document.getElementById('file1').click()">
+                            <p style="color: #097E90;">Selecionar</p>
+                        </button>
+                        <input name="file1" id="file1"  type="file"/>
+                    </label>
+                </div>
+                <div class="button-file">
+                    <p class="button-file-p">Comprovante de Residência</p>
+                    <label class="button-main" for="file2">
+                        <div class="button-context">
+                            <div class="button-context-img">
+                                <svg width="48" height="44" viewBox="0 0 48 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1875 31.125C-2.99999 32.8125 -1.31249 14.25 12.1875 15.9375C7.12501 -2.625 35.8125 -2.625 34.125 10.875C51 5.8125 51 32.8125 35.8125 31.125M15.5625 24.375L24 17.625M24 17.625L32.4375 24.375M24 17.625V42.9375"
+                                        stroke="#9BCB15" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="button-context-text">
+                                <p>Selecione arquivo ou arraste pra cá</p>
+                                <p style="color: #989692;">JPG, PNG ou PDF</p>
+                            </div>
+                        </div>
+                        <button class="button-main-select" onclick="document.getElementById('file2').click()">
+                            <p style="color: #097E90;">Selecionar</p>
+                        </button>
+                        <input name="file2" id="file2" type="file"/>
+                    </label>
+                </div>
+                
+            </div>
+            <div class="form-btns">
+                <button type="reset"><p style="color: #FF9F76;">Cancelar</p></button>
+                <button type="submit"><p style="color: white;">Enviar</p></button>
+            </div>
+        </form>
+    </div>
+    <div class="lgtrilhas"><img src="lgtrilhas.png"></div>
+</body>
+<script>
+        Array(...document.getElementsByTagName("input"))
+        .forEach(element_input => {
+            element_input.oninput = ({ target }) => {
+                console.log(target.value)
+                if (target.value) {
+                    console.log("ativando", target.name)
+                    target.parentElement.setAttribute("displayLabel", true)
+                } else {
+                    console.log("desativando", target.name)
+                    target.parentElement.setAttribute("displayLabel", false)
+                }
+            }
+        })
+</script>
+
+</html>

@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    background-color: transparent;
+}
+
+button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px 14px;
+    /* height: 32px; */
+}
+
+input {
+    border-color: #CACACA;
+    background-color: #FFFAF2;
+    width: 96%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 9px;
+    /* border: #f37820 1px solid; */
+    /* border-radius: 5px; */
+}
+
+input[type="file"] {
+    display: flex;
+}
+
+form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    /* width: 747px; */
+    width: 100%;
+    height: 800px;
+    border: 1px #f37820 solid;
+    border-radius: 20px;
+    background-color: #FFF;
+
+    padding: 40px 42px;
+}
+
+body {
+    font-size: 14px;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100wh;
+    min-height: 100vh;
+    background-color: #f37820;
+
+    background-image: url("./assets/imagem.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: contain;
+    background-size: min(80vh, 840px);
+}
+
+.container-form {
+    margin-right: 10%;
+    width: 900px;
+    max-width: 700px;
+}
+
+.container-img {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    /* background-image: url("./assets/imagem.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box; */
+    z-index: -1;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0rem;
+    display: none;
+}
+
+.input-container[displayLabel="true"] {
+    padding-top: 1rem;
+}
+
+.input-container[displayLabel="true"] label {
+    display: block;
+}
+
+.button-file {
+    width: 300px
+}
+
+.button-file-p {
+    height: 21px;
+    margin-bottom: 10px;
+}
+
+.button-main {
+    padding: 16px 9px;
+    border-radius: 5px;
+    border: #b8b8b8 solid 1px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.button-context {
+    display: flex;
+    gap: 12px
+}
+
+
+.button-context-img {
+    width: 54px;
+    height: 54px;
+}
+
+
+.button-context-text {
+    width: 110px;
+    text-wrap: balance;
+}
+
+
+.form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap:40px
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    ;
+}
+button[type="submit"]{
+    border-color: #FF9F76;
+    background-color: #f37820;
+}
+button[type="reset"]{
+    border-color: #FF9F76;
+    background-color: white;
+}
+button[class="button-main-select"]{
+    border-color: #097E90;
+}
