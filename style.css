@@ -27,7 +27,7 @@ input {
 }
 
 input[type="file"] {
-    display: flex;
+    display: none;
 }
 
 form {
@@ -116,7 +116,6 @@ body {
 }
 
 .button-file {
-    display: none;
     width: 300px
 }
 
