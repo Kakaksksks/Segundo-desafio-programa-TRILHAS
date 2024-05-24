@@ -116,6 +116,7 @@ body {
 }
 
 .button-file {
+    display: none;
     width: 300px
 }
 
